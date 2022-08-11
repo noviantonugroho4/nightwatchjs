@@ -62,11 +62,11 @@ Scenario: Input email not include @ And Valid password
 Given user visit Xswift page
 When user input email without @ and valid password
 And user click login button
-Then show alert password "Email must include '@' in the email address"
+Then show alert email "Email must include '@' in the email address"
 
 @TC_01_010
 Scenario: Input email not include @ And Invalid password
 Given user visit Xswift page
 When user input email without @ and invalid password
 And user click login button
-Then show alert password "Email must include '@' in the email address"
+Then show alert email "Email must include '@' in the email address"
