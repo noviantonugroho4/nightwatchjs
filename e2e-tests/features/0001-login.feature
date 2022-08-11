@@ -2,22 +2,71 @@
 @login
 Feature: login
 
-@C2797
-Scenario: Empty Field Email And Password 
-Given I visit Xswift page
-When I Click Button Login
-Then Show Alert Email and Password Empty not Found
-
-
 @TC_01_001
-Scenario: Empty Field Email And Valid Password
+Scenario: Invalid Email And Password
 Given user visit Xswift page
-When user input valid Password
-Then show alert email "Email input cannot be empty"
+When user input invalid email and password
+And user click login button
+Then show alert "Invalid user email or password"
 
 @TC_01_002
+Scenario: Invalid Email And Valid Password
+Given user visit Xswift page
+When user input invalid email and valid password
+And user click login button
+Then show alert "Invalid user email or password"
+
+@TC_01_003
+Scenario: Valid Email And Invalid Password
+Given user visit Xswift page
+When user input valid email and invalid password
+And user click login button
+Then show alert "Invalid user email or password"
+
+@TC_01_004
+Scenario: Empty Field Email And Field Password
+Given user visit Xswift page
+When user click login button
+Then show alert email "Email input cannot be empty" and alert password "Password input cannot be empty"
+
+@TC_01_005
+Scenario: Empty Field Email And Valid Password
+Given user visit Xswift page
+When user input valid password
+And user click login button
+Then show alert email "Email input cannot be empty"
+
+@TC_01_006
 Scenario: Valid Email And Empty Field Password
 Given user visit Xswift page
 When user input valid email
-Then show alert email "Password input cannot be empty"
+And user click login button
+Then show alert password "Password input cannot be empty"
 
+@TC_01_007
+Scenario: Empty Field Email And Invalid Password
+Given user visit Xswift page
+When user input invalid password
+And user click login button
+Then show alert email "Email input cannot be empty"
+
+@TC_01_008
+Scenario: Invalid Email And Empty Field Password
+Given user visit Xswift page
+When user input invalid email
+And user click login button
+Then show alert password "Password input cannot be empty"
+
+@TC_01_009
+Scenario: Input email not include @ And Valid password
+Given user visit Xswift page
+When user input email without @ and valid password
+And user click login button
+Then show alert password "Email must include '@' in the email address"
+
+@TC_01_010
+Scenario: Input email not include @ And Invalid password
+Given user visit Xswift page
+When user input email without @ and invalid password
+And user click login button
+Then show alert password "Email must include '@' in the email address"
