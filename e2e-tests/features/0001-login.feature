@@ -7,21 +7,21 @@ Scenario: Invalid Email And Password
 Given user visit Xswift page
 When user input invalid email and password
 And user click login button
-Then show alert "Invalid user email or password"
+Then show error message "Invalid user email or password"
 
 @TC_01_002
 Scenario: Invalid Email And Valid Password
 Given user visit Xswift page
 When user input invalid email and valid password
 And user click login button
-Then show alert "Invalid user email or password"
+Then show error message "Invalid user email or password"
 
 @TC_01_003
 Scenario: Valid Email And Invalid Password
 Given user visit Xswift page
 When user input valid email and invalid password
 And user click login button
-Then show alert "Invalid user email or password"
+Then show error message "Invalid user email or password"
 
 @TC_01_004
 Scenario: Empty Field Email And Field Password
