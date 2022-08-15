@@ -1,0 +1,716 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "login",
+    "line": 3,
+    "id": "login",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 2
+      }
+    ],
+    "uri": "e2e-tests/features/0001-login.feature",
+    "elements": [
+      {
+        "id": "login;login-with-valid-email-and-password",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid email and password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_001",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6440000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user input valid email \"nugi@gmail.com\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user input valid password \"12345\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user click login button",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user successfully login and direct to homepage",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-valid-email-and-invalid-password",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login with valid email and invalid password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_002",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4476000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user input valid email \"nugi@gmail.com\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "user input invalid password \"invalid12345\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user click login button",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "show alert \"Invalid user email or password\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 544000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-invalid-email-and-valid-password",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Login with invalid email and valid password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_003",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4358000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "user input invalid email \"zakia@gmail.com\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "user input valid password \"12345\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "user click login button",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "show alert \"Invalid user email or password\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-invalid-email-and-password",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Login with invalid email and password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_004",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4433000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "user input invalid email \"zakia@gmail.com\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "user input invalid password \"invalid12345\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "user click login button",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "show alert \"Invalid user email or password\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-empty-email",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Login with empty email",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_005",
+            "line": 37
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4420000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "user input valid password \"12345\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user click login button",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "show alert empty email \"Email input cannot be empty\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-empty-password",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Login with empty password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_006",
+            "line": 44
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 46,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4311000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "user input valid email \"nugi@gmail.com\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user click login button",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "show alert empty password \"Password input cannot be empty\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-empty-email-and-password",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Login with empty email and password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_007",
+            "line": 51
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 53,
+            "name": "user visit Xswift page",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "user click login button with empty email and password",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "show alert empty email \"Email input cannot be empty\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "show alert empty password \"Password input cannot be empty\"",
+            "match": {
+              "location": "e2e-tests/step-definitions/test.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

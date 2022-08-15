@@ -3,45 +3,54 @@
 Feature: login
 
 @TC_01_001
-Scenario: Login with registered email and valid password 
+Scenario: Login with valid email and password 
 Given user visit Xswift page
-When user input registered email "nugi@gmail.com" and valid password "12345"
+When user input valid email "nugi@gmail.com"
+And user input valid password "12345"
+And user click login button
 Then user successfully login and direct to homepage
 
 @TC_01_002
-Scenario: Login with registered email and invalid password 
+Scenario: Login with valid email and invalid password 
 Given user visit Xswift page
-When user input valid email "nugi@gmail.com" and invalid password "invalid12345"
-Then show pop up "Invalid user email and password. Please make sure your email and password are correct"
+When user input valid email "nugi@gmail.com"
+And user input invalid password "invalid12345"
+And user click login button
+Then show alert "Invalid user email or password"
 
 @TC_01_003
-Scenario: Login with invalid email format and valid password  
+Scenario: Login with invalid email and valid password  
 Given user visit Xswift page
-When user input valid email "lalala.xyz" and valid password "12345"
-Then show alert "Please enter a valid email address (ex format: name@example.com)"
+When user input invalid email "zakia@gmail.com" 
+And user input valid password "12345"
+And user click login button
+Then show alert "Invalid user email or password"
 
 @TC_01_004
-Scenario: Login with unregistered email and valid password 
+Scenario: Login with invalid email and password 
 Given user visit Xswift page
-When user input unregistered email "zakia@gmail.com" and invalid password "12345"
-Then show pop up "Email is unregistered. Please make sure your email and password are registered"
+When user input invalid email "zakia@gmail.com"
+And user input invalid password "invalid12345"
+And user click login button
+Then show alert "Invalid user email or password"
 
 @TC_01_005
-Scenario: Login with empty email and password 
+Scenario: Login with empty email
 Given user visit Xswift page
-When user click login button without input email and password field
-Then show alert "Email input cannot be empty. Password input cannot be empty"
+When user input valid password "12345"
+And user click login button
+Then show alert empty email "Email input cannot be empty"
 
 @TC_01_006
-Scenario: Login with empty email and valid password
+Scenario: Login with empty password
 Given user visit Xswift page
-When user input valid password only "12345"
+When user input valid email "nugi@gmail.com"
 And user click login button
-Then show alert "Email input cannot be empty"
+Then show alert empty password "Password input cannot be empty"
 
 @TC_01_007
-Scenario: Login with valid email and empty password 
+Scenario: Login with empty email and password 
 Given user visit Xswift page
-When user input valid email only "nugi@gmail.com"
-And user click login button
-Then show alert "Password input cannot be empty"
+When user click login button with empty email and password
+Then show alert empty email "Email input cannot be empty"
+Then show alert empty password "Password input cannot be empty"

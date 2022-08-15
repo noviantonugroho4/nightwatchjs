@@ -126,7 +126,7 @@ module.exports = {
  'acceptInsecureCerts' : true,
  "acceptSslCerts" : true,
  "chromeOptions": {
- "args": ["--disable-gpu", "--no-sandbox", "--start-maximized", "--window-size=1920,1200", "--disable-dev-shm-usage", "--headless"]
+ "args": ["--disable-gpu", "--no-sandbox", "--start-maximized", "--window-size=1920,1200", "--disable-dev-shm-usage"]
  }
  }
  },
