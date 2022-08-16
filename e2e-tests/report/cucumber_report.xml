@@ -1,0 +1,123 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "login",
+    "line": 3,
+    "id": "login",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 2
+      }
+    ],
+    "uri": "e2e-tests\\features\\0001-login.feature",
+    "elements": [
+      {
+        "id": "login;invalid-email-and-password",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "invalid email and password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@TC_01_002",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user on Xswift login page",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user input invalid email \"zakia@ria.com\"",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\test.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user input password",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\test.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "user click button login",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\test.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "show alert \"Invalid user email or password\"",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\test.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1076000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
