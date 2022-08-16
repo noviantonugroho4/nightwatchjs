@@ -2,8 +2,8 @@
 @login
 Feature: login
 
-@TC_01_008
-Scenario: empty email and password 
-Given user visit Xswift page
-When user sign in with empty email & password
-Then show alert "Email input cannot be empty" and "Password input cannot be empty"
+@TC_01_001
+Scenario: valid email and password 
+Given user visit orangeHRM page
+When user sign with username "admin" & password "admin123"
+Then user direct to home page "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
