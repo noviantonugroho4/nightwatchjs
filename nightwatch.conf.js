@@ -8,6 +8,7 @@ module.exports = {
  "src_folders" : ["e2e-tests"],
  "custom_commands_path": ["./e2e-tests/custom_commands", "./node_modules/nightwatch-xhr/es5/commands"],
  "custom_assertions_path": ["./node_modules/nightwatch-xhr/es5/assertions"],
+ "page_objects_path": ["./e2e-tests/pages"],
  
 //  "selenium": {
 //     "start_process": true,
