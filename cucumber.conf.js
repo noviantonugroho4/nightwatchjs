@@ -36,9 +36,9 @@ AfterAll(async () => {
   setTimeout(() => {
     reporter.generate({
       theme: 'bootstrap',
-      jsonFile: 'e2e-tests/report/cucumber_report.json',
-      output: 'e2e-tests/report/cucumber_report.html',
-      junit: 'e2e-tests/report/cucumber_report.xml',
+      jsonFile: 'e2e-tests/tests_output/report/cucumber_report.json',
+      output: 'e2e-tests/tests_output/report/cucumber_report.html',
+      junit: 'e2e-tests/tests_output/report/cucumber_report.xml',
       reportSuiteAsScenarios: true,
       launchReport: true,
       metadata: {

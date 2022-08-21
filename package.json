@@ -6,7 +6,7 @@
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
     "e2e-test:tdd": "nightwatch",
-    "e2e-test:bdd": "cucumber-js e2e-tests/features --require cucumber.conf.js --require e2e-tests/step-definitions --format node_modules/cucumber-pretty --format json:e2e-tests/report/cucumber_report.json  --format json:e2e-tests/report/cucumber_report.xml"
+    "e2e-test:bdd": "cucumber-js e2e-tests/features --require cucumber.conf.js --require e2e-tests/step-definitions --format node_modules/cucumber-pretty --format json:e2e-tests/tests_output/report/cucumber_report.json  --format json:e2e-tests/tests_output/report/cucumber_report.xml"
   },
   "repository": {
     "type": "git",

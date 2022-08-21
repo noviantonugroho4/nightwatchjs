@@ -3,10 +3,17 @@ const { Given, Then, When } = require('cucumber')
 
 When(/^user create new account$/, () => {
     const authentication = client.page.authentication();
+
+    const test = client.page.nav_menu();
+    test.expect.section('@nav_menu').to.be.visible;
+
+    const menuSection = test.section.nav_menu;
+    menuSection.expect.element('@sign_in').to.be.visible;
+    menuSection.click('@sign_in');
+
     return authentication
 
     .useXpath()
-    .click('//*[@class="login"]')
     .waitForElementPresent('@email_input')
     .setValue('@email_input', 'asd@yopmail.com')
     .click('@create_account_btn')
