@@ -5,7 +5,9 @@ Feature: login
 @TC_002_001
 Scenario: valid credential
 Given user on OrangeHRM login page
-When user click button login
+When user input valid username "Admin"
+And user input val password "admin123"
+And user click button login
 Then user direct on homepage
 
 @TC_002_002
