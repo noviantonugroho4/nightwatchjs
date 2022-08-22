@@ -13,26 +13,26 @@ Given(/^user visit automationpractice page$/, () => {
   .pause(1000)
 })
 
-When (/^user create new account$/, () => {
+// When (/^user create new account$/, () => {
 
-  const header = client.page.header();
-  header.expect.section('@header').to.be.visible;
+//   const header = client.page.header();
+//   header.expect.section('@header').to.be.visible;
 
-  const sign_in = header.section.header;
+//   const sign_in = header.section.header;
 
-  return sign_in;
-  .expect.section('@sign_in_btn').to.be.visible;
+//   return sign_in
+//   .expect.section('@sign_in_btn').to.be.visible;
   
-  const authentication = client.page.authentication();
-  return authentication
+//   const authentication = client.page.authentication();
+//   return authentication
 
-  .useXpath()
-  .click('//*[@class="login"]')
-  .waitForElementPresent('@email_input')
-  .setValue('@email_input', 'asd@yopmail.com')
-  .click('@create_account_btn')
-  .pause(5000)
-})
+//   .useXpath()
+//   .click('//*[@class="login"]')
+//   .waitForElementPresent('@email_input')
+//   .setValue('@email_input', 'asd@yopmail.com')
+//   .click('@create_account_btn')
+//   .pause(5000)
+// })
 
 Then (/^user cannot regist new account$/, () => {
   const authentication = client.page.authentication();
