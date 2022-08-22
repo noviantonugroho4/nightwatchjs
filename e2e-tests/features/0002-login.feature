@@ -2,11 +2,11 @@
 @login
 Feature: login
 
-@TC_01_002
-Scenario: user create account with account registed
-Given user visit automationpractice page
-When user create new account
-Then user cannot regist new account
+# @TC_01_002
+# Scenario: user create account with account registed
+# Given user visit automationpractice page
+# When user create new account
+# Then user cannot regist new account
 
 @TC_01_003
 Scenario: valid email and password 

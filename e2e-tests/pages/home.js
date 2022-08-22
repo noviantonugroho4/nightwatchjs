@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'http://automationpractice.com'
+    url: 'https://opensource-demo.orangehrmlive.com/web/index.php'
   };
