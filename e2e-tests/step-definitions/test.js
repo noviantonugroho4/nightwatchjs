@@ -16,6 +16,7 @@ When(/^user input invalid email "(.*?)"$/, (email) => {
     .setValue('//*[@id="email"]', email)
 })
 
+
 When(/^user input password$/, () => {
     return client
     .useXpath()
@@ -35,11 +36,11 @@ When(/^user input valid password "(.*?)"$/, (password) => {
     .setValue('//*[@id="password"]', password)
 })
 
-When(/^user click button login$/, () => {
-    return client
-    .useXpath()
-    .click('//button[contains(@class, "btn-login")]')
-})
+// When(/^user click button login$/, () => {
+//     return client
+//     .useXpath()
+//     .click('//button[contains(@class, "btn-login")]')
+// })
 
 Then(/^show alert "(.*?)"$/, (notif) => {
     return client
