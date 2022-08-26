@@ -16,6 +16,10 @@ module.exports={
         my_account_btn: {
             selector: '//a[contains(text(),"My Account")]',
             locateStrategy: 'xpath'
+        },
+        log_out_btn: {
+            selector: '//a[contains(text(),"Log out")]',
+            locateStrategy: 'xpath'
         }
     }
 }
