@@ -8,6 +8,7 @@ module.exports = {
  "src_folders" : ["e2e-tests"],
  "custom_commands_path": ["./e2e-tests/custom_commands", "./node_modules/nightwatch-xhr/es5/commands"],
  "custom_assertions_path": ["./node_modules/nightwatch-xhr/es5/assertions"],
+ "page_objects_path":["./e2e-tests/pages", "./e2e-tests/sections"],
  
 //  "selenium": {
 //     "start_process": true,
@@ -126,7 +127,9 @@ module.exports = {
  'acceptInsecureCerts' : true,
  "acceptSslCerts" : true,
  "chromeOptions": {
- "args": ["--disable-gpu", "--no-sandbox", "--start-maximized", "--window-size=1920,1200", "--disable-dev-shm-usage", "--headless"]
+ "args": ["--disable-gpu", "--no-sandbox", "--start-maximized", "--window-size=1920,1200", "--disable-dev-shm-usage", 
+ //"--headless"
+]
  }
  }
  },
