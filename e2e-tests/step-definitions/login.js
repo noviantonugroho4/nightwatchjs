@@ -11,7 +11,7 @@ Given(/^user visit shop demoqa page$/, () => {
     .waitForElementNotVisible('//a[contains(@class,"notice")]')
 })
 
-When(/^user sign with username "(.*?)" & password "(.*?)"$/, (email, password) => {
+When(/^user sign in with username "(.*?)" & password "(.*?)"$/, (username, password) => {
     const myAccount_page = client.page.myAccount();
 
     const header_section = myAccount_page.page.header();
@@ -22,8 +22,8 @@ When(/^user sign with username "(.*?)" & password "(.*?)"$/, (email, password) =
 
     return myAccount_page
     .click('@my_account_btn')
-    .waitForElementPresent('@email_input')
-    .setValue('@email_input', email)
+    .waitForElementPresent('@username_input')
+    .setValue('@username_input', username)
     .setValue('@password_input', password)
     .click('@login_btn')
     .pause(3000);
