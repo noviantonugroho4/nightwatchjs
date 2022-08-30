@@ -1,7 +1,7 @@
 const { client } = require('nightwatch-api')
 const { Given, Then, When } = require('cucumber');
 
-Given(/^user visit home page from My Account page$/, () => {
+Given(/^user visit home page from my account page$/, () => {
     const myAccount_page = client.page.myAccount();
 
     return myAccount_page
@@ -15,17 +15,28 @@ When(/^user open product detail$/, () => {
     return homepage
     .waitForElementPresent('@product_link')
     .click('@product_link')
-    .pause(10000)
+    .pause(7000)
 })
 
 When(/^user add "(.*?)" of same product to cart$/, (qty) => {
     const details = client.page.detail_product();
 
-    return details
-    .waitForElementPresent('@detail_tokyo_talkies')
-    .clearValue('@detail_tokyo_talkies')
-    .setValue('@detail_tokyo_talkies', qty)
+    const header_section = details.page.header();
+    header_section.expect.section('@header_menu').to.be.visible;
+    
+    const elements = header_section.section.header_menu
+
+    details
+    .waitForElementPresent('@color_tokyo_talkies')
+    .click('@color_tokyo_talkies')
+    .click('@select_color_tokyo_talkies')
+    .click('@size_tokyo_talkies')
+    .click('@select_size_tokyo_talkies')
+    .clearValue('@qty_tokyo_talkies')
+    .setValue('@qty_tokyo_talkies', qty)
     .click('@atc_btn')
+
+    return elements
     .click('@cart_icon')
 })
 
@@ -36,4 +47,8 @@ Then(/^product successfully added to cart$/, () => {
     .waitForElementPresent('@name_tbl')
     .assert.containsText('@name_tbl', 'TOKYO TALKIES')
     .assert.valueContains('@qty_tbl', '6')
+    .pause(3000)
+    //for empty cart
+    .click('@empty_cart')
+    
 })

@@ -10,6 +10,10 @@ module.exports={
                     my_account_btn: {
                         selector: '//a[contains(text(),"My Account")]',
                         locateStrategy: 'xpath'
+                    },
+                    cart_icon: {
+                        selector: '//*[@class="cart-name-and-total"]',
+                        locateStrategy: 'xpath'
                     }
                 }
         }

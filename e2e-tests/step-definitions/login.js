@@ -1,9 +1,10 @@
-const { client } = require('nightwatch-api')
+const { client } = require('nightwatch-api');
 const { Given, Then, When } = require('cucumber');
+const { url } = require('../pages/myAccount');
 
 Given(/^user visit shop demoqa home page$/, () => {
     return client
-    .url(process.env.URL_shopDemoQA)
+    .url(process.env.URL)
     .maximizeWindow()
     .useXpath()
     .waitForElementPresent('//a[contains(@class,"notice")]')
@@ -34,10 +35,8 @@ When(/^user login with username "(.*?)" & password "(.*?)"$/, (email, password) 
 Then(/^user direct to my account page$/, () => {
     const myAccount_page = client.page.myAccount();
 
-    client
-    .assert.urlEquals('https://shop.demoqa.com/my-account/')
-
     return myAccount_page
+    .assert.urlEquals(url)
     .waitForElementPresent('@my_account_lbl')
     .assert.containsText('@my_account_lbl', 'MY ACCOUNT')
 })
