@@ -13,10 +13,10 @@
     "uri": "e2e-tests/features/001_login.feature",
     "elements": [
       {
-        "id": "login;valid-email-and-password",
+        "id": "login;valid-username-and-password",
         "keyword": "Scenario",
         "line": 6,
-        "name": "valid email and password",
+        "name": "valid username and password",
         "tags": [
           {
             "name": "@login",
@@ -35,24 +35,24 @@
             "line": 7,
             "name": "user visit shop demoqa page",
             "match": {
-              "location": "e2e-tests/step-definitions/login.js:4"
+              "location": "e2e-tests/step-definitions/login.js:5"
             },
             "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "TypeError: client.navigate is not a function\n    at World.<anonymous> (/Users/mekari/Documents/github/nightwatchjs/e2e-tests/step-definitions/login.js:6:6)"
+              "status": "passed",
+              "duration": 10873000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "user sign with username \"asdasd@yopmail.com\" & password \"noviantonugroho\"",
+            "name": "user sign in with username \"zakiazakia\" & password \"PDzakia123\"",
             "match": {
-              "location": "e2e-tests/step-definitions/login.js:14"
+              "location": "e2e-tests/step-definitions/login.js:15"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8757000000
             }
           },
           {
@@ -61,10 +61,11 @@
             "line": 9,
             "name": "user direct to my account page",
             "match": {
-              "location": "e2e-tests/step-definitions/login.js:32"
+              "location": "e2e-tests/step-definitions/login.js:33"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 134000000
             }
           },
           {
@@ -75,7 +76,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -86,7 +87,115 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "addToCart",
+    "line": 3,
+    "id": "addtocart",
+    "tags": [
+      {
+        "name": "@addtocart",
+        "line": 2
+      }
+    ],
+    "uri": "e2e-tests/features/002_addtocart.feature",
+    "elements": [
+      {
+        "id": "addtocart;add-7-products-to-cart",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "add 7 products to cart",
+        "tags": [
+          {
+            "name": "@addtocart",
+            "line": 2
+          },
+          {
+            "name": "@TC_02_001",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user on shop demoqa my account page",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4662000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user open the details of the selected product",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3091000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user add \"7\" of the selected product to the cart",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "selected product successfully added to the cart",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
             }
           }
         ]

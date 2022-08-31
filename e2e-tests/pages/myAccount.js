@@ -1,5 +1,5 @@
 module.exports={
-    url: 'https://shop.demoqa.com',
+    url: 'https://shop.demoqa.com/my-account/',
     elements: {
         username_input: {
             selector: '//input[@id="username"]',
@@ -17,9 +17,9 @@ module.exports={
             selector: '//a[contains(text(),"My Account")]',
             locateStrategy: 'xpath'
         },
-        shop_qa_site: {
-            selector: '//*[@id="noo-site"]/section/div/div/div/span[1]/a',
+        demo_site_lbl: {
+            selector: '//div[@class="noo-page-breadcrumb"]//child::span[contains(text(), "ToolsQA Demo Site")]',
             locateStrategy: 'xpath'
-        }
+        }  
     }
 }

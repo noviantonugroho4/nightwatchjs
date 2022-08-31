@@ -1,5 +1,6 @@
 const { client } = require('nightwatch-api')
 const { Given, Then, When } = require('cucumber');
+const { url } = require('../pages/myAccount');
 
 Given(/^user visit shop demoqa page$/, () => {
     return client
@@ -31,6 +32,7 @@ When(/^user sign in with username "(.*?)" & password "(.*?)"$/, (username, passw
 
 Then(/^user direct to my account page$/, () => {
     const myAccount_page = client.page.myAccount();
-    myAccount_page
-    .assert.urlEquals();
+
+    return myAccount_page
+    .assert.urlContains(url);
 })
