@@ -1,24 +1,28 @@
 module.exports={
     url: 'https://shop.demoqa.com/product/pink-drop-shoulder-oversized-t-shirt/',
     elements: {
+        product_name: {
+            selector: '//h1[@class="product_title entry-title"]',
+            locateStrategy: 'xpath'
+        },
         quantity_input: {
             selector: '//input[@name="quantity"]',
             locateStrategy: 'xpath'
         },
         product_color: {
-            selector: '//*[@id="pa_color"]/option[2]',
+            selector: '//select[@id="pa_color"]/option[@value="pink"]',
             locateStrategy: 'xpath'
         },
         product_size: {
-            selector: '//*[@id="pa_size"]/option[3]',
+            selector: '//select[@id="pa_size"]/option[@value=37]',
             locateStrategy: 'xpath'
         },
         addtocart_btn: {
-            selector: '//*[@id="product-1497"]/div[1]/div[2]/form/div/div[2]/button',
+            selector: '//button[@class="single_add_to_cart_button button alt"]',
             locateStrategy: 'xpath'
         },
         cart_icon: {
-            selector: '//*[@class="cart-name-and-total"]',
+            selector: '//span[@class="cart-name-and-total"]',
             locateStrategy: 'xpath'
         }
     }
