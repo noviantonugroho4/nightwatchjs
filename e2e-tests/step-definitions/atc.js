@@ -48,7 +48,7 @@ Then(/^product successfully added to cart$/, () => {
     .assert.containsText('@name_tbl', 'TOKYO TALKIES')
     .assert.valueContains('@qty_tbl', '6')
     .pause(3000)
-    //for empty cart
+    //add step for empty cart
     .click('@empty_cart')
     
 })
