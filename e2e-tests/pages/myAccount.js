@@ -16,6 +16,10 @@ module.exports={
         my_account_btn: {
             selector: '//a[contains(text(),"My Account")]',
             locateStrategy: 'xpath'
+        },
+        shop_site_btn: {
+            selector: '//*[@class="home")]',
+            locateStrategy: 'xpath'
         }
     }
 }

@@ -89,7 +89,8 @@ module.exports = {
 //   }
  "webdriver" : {
  "start_process": true,
- "server_path": "./node_modules/.bin/chromedriver",
+ "server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
+//  "server_path": require('chromedriver').path,
  "port": 9515
  },
  'test_workers': {
@@ -99,7 +100,7 @@ module.exports = {
  'test_settings': {
  'default': {
  'webdriver': {
- 'server_path': "./node_modules/.bin/chromedriver"
+ 'server_path': "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe"
  },
  'desiredCapabilities': { // use Chrome as the default browser for tests
  'browserName': 'chrome'
@@ -108,7 +109,7 @@ module.exports = {
  'chrome': {
  'webdriver' : {
  'start_process': true, // tells nightwatch to start/stop the process by itself
- 'server_path': "./node_modules/.bin/chromedriver",
+ 'server_path': "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
  'host': '127.0.0.1',
  'port': 9515,
  'log_path' : './e2e-tests/tests_output/logs/'
