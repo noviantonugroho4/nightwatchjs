@@ -9,7 +9,7 @@ When user click Tools Demo QA Site
 And user click the product
 Then user should see detail product page
 When user select the color of product
-And user select the size of product
+And user select the size of product 
 And user add "7" quantity of product
 And user click add to cart button
 And user click cart icon

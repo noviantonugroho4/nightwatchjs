@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13750000000
+              "duration": 9831000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9413000000
+              "duration": 11054000000
             }
           },
           {
@@ -65,7 +65,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47000000
+              "duration": 35000000
             }
           },
           {
@@ -76,7 +76,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 1000000
             }
           },
           {
@@ -130,11 +130,11 @@
             "line": 8,
             "name": "user click Tools Demo QA Site",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:11"
+              "location": "e2e-tests/step-definitions/cart.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1681000000
+              "duration": 2789000000
             }
           },
           {
@@ -143,11 +143,11 @@
             "line": 9,
             "name": "user click the product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:19"
+              "location": "e2e-tests/step-definitions/cart.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3504000000
+              "duration": 10558000000
             }
           },
           {
@@ -156,11 +156,11 @@
             "line": 10,
             "name": "user should see detail product page",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:27"
+              "location": "e2e-tests/step-definitions/cart.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 164000000
             }
           },
           {
@@ -169,11 +169,11 @@
             "line": 11,
             "name": "user select the color of product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:34"
+              "location": "e2e-tests/step-definitions/cart.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 114000000
+              "duration": 1083000000
             }
           },
           {
@@ -182,11 +182,11 @@
             "line": 12,
             "name": "user select the size of product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:42"
+              "location": "e2e-tests/step-definitions/cart.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 353000000
+              "duration": 891000000
             }
           },
           {
@@ -195,11 +195,11 @@
             "line": 13,
             "name": "user add \"7\" quantity of product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:51"
+              "location": "e2e-tests/step-definitions/cart.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 324000000
+              "duration": 827000000
             }
           },
           {
@@ -208,11 +208,11 @@
             "line": 14,
             "name": "user click add to cart button",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:60"
+              "location": "e2e-tests/step-definitions/cart.js:65"
             },
             "result": {
               "status": "passed",
-              "duration": 1707000000
+              "duration": 3556000000
             }
           },
           {
@@ -221,11 +221,11 @@
             "line": 15,
             "name": "user click cart icon",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:68"
+              "location": "e2e-tests/step-definitions/cart.js:73"
             },
             "result": {
               "status": "passed",
-              "duration": 2028000000
+              "duration": 5550000000
             }
           },
           {
@@ -234,11 +234,11 @@
             "line": 16,
             "name": "user should see the product on cart page",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:76"
+              "location": "e2e-tests/step-definitions/cart.js:81"
             },
             "result": {
               "status": "passed",
-              "duration": 163000000
+              "duration": 518000000
             }
           },
           {
@@ -247,11 +247,11 @@
             "line": 17,
             "name": "user click clear shopping cart button",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:85"
+              "location": "e2e-tests/step-definitions/cart.js:90"
             },
             "result": {
               "status": "passed",
-              "duration": 1164000000
+              "duration": 1611000000
             }
           },
           {
@@ -260,11 +260,11 @@
             "line": 18,
             "name": "user should see empty shopping cart",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:93"
+              "location": "e2e-tests/step-definitions/cart.js:98"
             },
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 234000000
             }
           },
           {
@@ -275,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 4000000
             }
           },
           {
@@ -286,7 +286,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 0
             }
           }
         ]

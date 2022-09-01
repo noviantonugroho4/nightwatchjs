@@ -18,7 +18,7 @@ module.exports={
             locateStrategy: 'xpath'
         },
         demo_site_lbl: {
-            selector: '//div[@class="noo-page-breadcrumb"]//child::span[contains(text(), "ToolsQA Demo Site")]',
+            selector: '//a[@class="home"]',
             locateStrategy: 'xpath'
         }  
     }

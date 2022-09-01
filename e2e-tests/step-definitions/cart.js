@@ -1,6 +1,8 @@
 const { client } = require('nightwatch-api')
 const { Given, Then, When } = require('cucumber');
 const { url } = require('../pages/myAccount');
+let product_name;
+const details = client.page.productDetails();
 
 Given(/^user on shop demoqa my account page$/, () => {
     return client
@@ -18,6 +20,9 @@ When(/^user click Tools Demo QA Site$/, () => {
 
 When(/^user click the product$/, () => {
     const product_page = client.page.productPage();
+    product_page.getText('@product_site', (data) => {
+        product_name = data.value
+    });
 
     return product_page
     .waitForElementPresent('@product_site')
@@ -25,14 +30,14 @@ When(/^user click the product$/, () => {
 })
 
 Then(/^user should see detail product page$/, () => {
-    const details = client.page.productDetails();
+    // const details = client.page.productDetails();
 
     return details
-    .assert.containsText('@product_name', 'PINK DROP SHOULDER')
+    .assert.containsText('@product_name', product_name)
 })
 
 When(/^user select the color of product$/, () => {
-    const details = client.page.productDetails();
+    // const details = client.page.productDetails();
 
     return details
     .waitForElementPresent('@product_color')
@@ -40,7 +45,7 @@ When(/^user select the color of product$/, () => {
 })
 
 When(/^user select the size of product$/, () => {
-    const details = client.page.productDetails();
+    // const details = client.page.productDetails();
 
     return details
     .waitForElementPresent('@product_size')
@@ -49,7 +54,7 @@ When(/^user select the size of product$/, () => {
 
 
 When(/^user add "(.*?)" quantity of product$/, (Qty) => {
-    const details = client.page.productDetails();
+    // const details = client.page.productDetails();
 
     return details
     .waitForElementPresent('@quantity_input')
@@ -58,7 +63,7 @@ When(/^user add "(.*?)" quantity of product$/, (Qty) => {
 })
 
 When(/^user click add to cart button$/, () => {
-    const details = client.page.productDetails();
+    // const details = client.page.productDetails();
 
     return details
     .waitForElementPresent('@addtocart_btn')
@@ -66,7 +71,7 @@ When(/^user click add to cart button$/, () => {
 })
 
 When(/^user click cart icon$/, () => {
-    const details = client.page.productDetails();
+    // const details = client.page.productDetails();
 
     return details
     .waitForElementPresent('@cart_icon')
@@ -77,7 +82,7 @@ Then(/^user should see the product on cart page$/, () => {
     const myCart_page = client.page.myCart();
 
     return myCart_page
-    .assert.containsText('@product_name', 'PINK DROP SHOULDER')
+    .assert.containsText('@product_name', product_name)
     .assert.containsText('@product_size', '37')
     .assert.valueContains('@product_qty', '7')
 })
