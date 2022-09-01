@@ -10,11 +10,11 @@ module.exports={
             locateStrategy: 'xpath'
         },
         product_color: {
-            selector: '//select[@id="pa_color"]/option[@value="pink"]',
+            selector: '//select[@id="pa_color"]/option[@class="attached enabled"][1]',
             locateStrategy: 'xpath'
         },
         product_size: {
-            selector: '//select[@id="pa_size"]/option[@value=37]',
+            selector: '//select[@id="pa_size"]/option[@class="attached enabled"][1]',
             locateStrategy: 'xpath'
         },
         addtocart_btn: {

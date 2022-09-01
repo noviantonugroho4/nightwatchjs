@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9831000000
+              "duration": 9082000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11054000000
+              "duration": 8970000000
             }
           },
           {
@@ -65,7 +65,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35000000
+              "duration": 60000000
             }
           },
           {
@@ -87,7 +87,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 0
             }
           }
         ]
@@ -96,7 +96,7 @@
   },
   {
     "keyword": "Feature",
-    "name": "addToCart",
+    "name": "addtocart",
     "line": 3,
     "id": "addtocart",
     "tags": [
@@ -130,11 +130,11 @@
             "line": 8,
             "name": "user click Tools Demo QA Site",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:13"
+              "location": "e2e-tests/step-definitions/cart.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 2789000000
+              "duration": 1799000000
             }
           },
           {
@@ -143,11 +143,11 @@
             "line": 9,
             "name": "user click the product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:21"
+              "location": "e2e-tests/step-definitions/cart.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 10558000000
+              "duration": 5214000000
             }
           },
           {
@@ -156,115 +156,115 @@
             "line": 10,
             "name": "user should see detail product page",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:32"
+              "location": "e2e-tests/step-definitions/cart.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 164000000
+              "duration": 91000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 13,
             "name": "user select the color of product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:39"
+              "location": "e2e-tests/step-definitions/cart.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 1083000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "user select the size of product",
-            "match": {
-              "location": "e2e-tests/step-definitions/cart.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 891000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "user add \"7\" quantity of product",
-            "match": {
-              "location": "e2e-tests/step-definitions/cart.js:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 827000000
+              "duration": 196000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "user click add to cart button",
+            "name": "user select the size of product",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:65"
+              "location": "e2e-tests/step-definitions/cart.js:60"
             },
             "result": {
               "status": "passed",
-              "duration": 3556000000
+              "duration": 507000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
+            "name": "user add \"7\" quantity of product",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user click add to cart button",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
             "name": "user click cart icon",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:73"
+              "location": "e2e-tests/step-definitions/cart.js:95"
             },
             "result": {
               "status": "passed",
-              "duration": 5550000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "user should see the product on cart page",
-            "match": {
-              "location": "e2e-tests/step-definitions/cart.js:81"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 518000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "user click clear shopping cart button",
-            "match": {
-              "location": "e2e-tests/step-definitions/cart.js:90"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1611000000
+              "duration": 4756000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "user should see empty shopping cart",
+            "name": "user should see the product on cart page",
             "match": {
-              "location": "e2e-tests/step-definitions/cart.js:98"
+              "location": "e2e-tests/step-definitions/cart.js:99"
             },
             "result": {
               "status": "passed",
-              "duration": 234000000
+              "duration": 171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user click clear shopping cart button",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should see empty shopping cart",
+            "match": {
+              "location": "e2e-tests/step-definitions/cart.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169000000
             }
           },
           {
@@ -275,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 1000000
             }
           },
           {
@@ -286,7 +286,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
