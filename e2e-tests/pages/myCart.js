@@ -1,4 +1,4 @@
-module.exports={
+module.exports = {
     url: 'https://shop.demoqa.com/cart/',
     elements: {
         product_name: {

@@ -1,4 +1,4 @@
-module.exports={
+module.exports = {
     url: 'https://shop.demoqa.com/product/pink-drop-shoulder-oversized-t-shirt/',
     elements: {
         product_name: {

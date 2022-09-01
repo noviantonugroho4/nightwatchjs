@@ -79,7 +79,6 @@ When(/^user select the size of product$/, () => {
         .click('@product_size')
 })
 
-
 When(/^user add "(.*?)" quantity of product$/, (Qty) => {
     product_qty = Qty
     return details

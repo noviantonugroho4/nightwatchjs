@@ -1,4 +1,4 @@
-module.exports={
+module.exports = {
     url: 'https://shop.demoqa.com',
     elements: {
         product_site: {
@@ -6,5 +6,5 @@ module.exports={
             locateStrategy: 'xpath'
         }
     }
-    
+
 }

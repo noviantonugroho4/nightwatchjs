@@ -1,4 +1,4 @@
-module.exports={
+module.exports = {
     url: 'https://shop.demoqa.com/my-account/',
     elements: {
         username_input: {
@@ -20,6 +20,6 @@ module.exports={
         demo_site_lbl: {
             selector: '//a[@class="home"]',
             locateStrategy: 'xpath'
-        }  
+        }
     }
 }
