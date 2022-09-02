@@ -1,7 +1,7 @@
-module.exports={
+module.exports = {
     url: 'https://shop.demoqa.com/my-account/',
     elements: {
-        email_input: {
+        username_input: {
             selector: '//input[@id="username"]',
             locateStrategy: 'xpath'
         },
@@ -15,6 +15,10 @@ module.exports={
         },
         my_account_btn: {
             selector: '//a[contains(text(),"My Account")]',
+            locateStrategy: 'xpath'
+        },
+        demo_site_lbl: {
+            selector: '//a[@class="home"]',
             locateStrategy: 'xpath'
         }
     }
