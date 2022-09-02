@@ -1,5 +1,5 @@
 module.exports={
-    url: 'https://shop.demoqa.com/my-account/',
+    url: 'https://shop.demoqa.com/',
     elements: {
         email_input: {
             selector: '//input[@id="username"]',
@@ -16,6 +16,10 @@ module.exports={
         my_account_btn: {
             selector: '//a[contains(text(),"My Account")]',
             locateStrategy: 'xpath'
-        }
+        },
+        shoptools_btn: {
+            selector: '//a/img[@class="custom-logo"]',
+            locateStrategy: 'xpath'
+        }   
     }
 }

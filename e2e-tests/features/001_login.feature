@@ -3,7 +3,7 @@
 Feature: login
 
 @TC_01_001
-Scenario: valid email and passwords
+Scenario: valid email and password
 Given user visit shop demoqa page
-When user sign with username "asdasd@yopmail.com" & password "noviantonugroho"
+When user sign with username "mawar@gmail.com" & password "nurmawar16"
 Then user direct to my account page

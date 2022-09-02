@@ -1,6 +1,9 @@
 const { client } = require('nightwatch-api')
 const { Given, Then, When } = require('cucumber');
+const { url } = require('../pages/myAccount');
 
+
+//@TC_01_001
 Given(/^user visit shop demoqa page$/, () => {
     return client
     .url(process.env.URL)
@@ -11,6 +14,7 @@ Given(/^user visit shop demoqa page$/, () => {
     .waitForElementNotVisible('//a[contains(@class,"notice")]')
 })
 
+//user sign with username "mawar@gmail.com" & password "nurmawar16"
 When(/^user sign with username "(.*?)" & password "(.*?)"$/, (email, password) => {
     const myAccount_page = client.page.myAccount();
 
@@ -31,6 +35,6 @@ When(/^user sign with username "(.*?)" & password "(.*?)"$/, (email, password) =
 
 Then(/^user direct to my account page$/, () => {
     const myAccount_page = client.page.myAccount();
-    myAccount_page
-    .assert.urlEquals();
+    return myAccount_page
+    .assert.urlContains(url);
 })
