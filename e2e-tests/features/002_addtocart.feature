@@ -4,12 +4,9 @@ Feature: addtocart
 
     @TC_02_001
     Scenario: add 7 products to cart
-        # Given user open shop demoqa my account page
-        When user click Tools Demo QA Site
-        And user click the product
+        Given user open Tools Demo QA Site
+        When user click the product
         Then user should see detail product page
-        # When user select the color "pink" of product
-        # And user select the size "37" of product
         When user select the color of product
         And user select the size of product
         And user add "7" quantity of product
