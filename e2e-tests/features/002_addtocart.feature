@@ -1,6 +1,6 @@
-#Addtochart
-@Addtochart
-Feature: Addtochart
+#Addtocart
+@Addtocart
+Feature: Addtocart
 
 #Background: Login
 

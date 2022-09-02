@@ -5,12 +5,14 @@ module.exports={
             selector: '//input[@name="quantity"]',
             locateStrategy: 'xpath'
         },
-        addtochart_btn: {
-            selector: '//*[@id="product-1162"]/div[1]/div[2]/form/div/div[2]/button',
+        addtocart_btn: {
+            selector: '//button[@class="single_add_to_cart_button button alt"]',
+            //selector: '//button[@class="single_add_to_cart_button button alt disable wc-variation-selection-needed"]',
             locateStrategy: 'xpath'
         },
         cart_icon_total: {
-            selector: '//*[@class="cart-name-and-total"]',
+            //selector: '//*[@id="nav-menu-item-cart"]/a',
+            selector: '//a[@class="button wc-forward"]',
             locateStrategy: 'xpath'
         },
         color_dress: {
@@ -19,6 +21,10 @@ module.exports={
         },
         size_dress: {
             selector: '//*[@id="pa_size"]/option[4]',
+            locateStrategy: 'xpath'
+        },
+        plus_btn: {
+            selector: '//i[@class="icon_plus"]',
             locateStrategy: 'xpath'
         }
     }

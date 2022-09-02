@@ -8,9 +8,9 @@ Given(/^user on my account shop page$/, () => {
     const myAccount = client.page.myAccount();
 
     return myAccount
+    //.maximizeWindow()
     .waitForElementPresent('@shoptools_btn')
     .click('shoptools_btn')
-    .pause(3000)
 })
 
 //user open the detail dress
@@ -18,29 +18,28 @@ When(/^user open the detail dress$/, () => {
     const shoppage = client.page.shoppage();
 
     return shoppage
-    //.waitForElementPresent('@dressproduct')
+    .waitForElementPresent('@dressproduct')
     .click('@dressproduct')
-    .pause(3000)
 })
 
 //user add "5" dress to shopping cart
 When(/^user add "(.*?)" dress to shopping cart$/, (Qty) => {
-    const addtochart = client.page.productdetail();
+    const addtocart = client.page.productdetail();
 
-    return addtochart
-    .waitForElementPresent('@detail_dress')
+    return addtocart
     .click('@color_dress', 'black')
     .click('@size_dress', 'small')
+    .waitForElementPresent('@detail_dress')
     .clearValue('@detail_dress')
     .setValue('@detail_dress', Qty)
-    .click('@addtochart_btn')
-    .pause(3000)
+    .click('@addtocart_btn')
 })
 
 //user open my shopping cart
 When(/^user open my shopping cart$/, () => {
     const charttotal = client.page.productdetail();
     return charttotal
+    .waitForElementPresent('@cart_icon_total')
     .click('@cart_icon_total')
 })
 
@@ -48,5 +47,6 @@ When(/^user open my shopping cart$/, () => {
 Then(/^user should see the dress in my shopping cart$/, () => {
     const myshoppingchart = client.page.myshoppingchart();
     return myshoppingchart
-    .assert.urlContains(url, 'https://shop.demoqa.com/cart/')
+    .assert.urlContains(url)
+    .click('@hapuscart')
 })

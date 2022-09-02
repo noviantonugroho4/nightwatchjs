@@ -13,10 +13,10 @@
     "uri": "e2e-tests\\features\\001_login.feature",
     "elements": [
       {
-        "id": "login;valid-email-and-passwords",
+        "id": "login;valid-email-and-password",
         "keyword": "Scenario",
         "line": 6,
-        "name": "valid email and passwords",
+        "name": "valid email and password",
         "tags": [
           {
             "name": "@login",
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9630000000
+              "duration": 52683000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8409000000
+              "duration": 22130000000
             }
           },
           {
@@ -61,132 +61,11 @@
             "line": 9,
             "name": "user direct to my account page",
             "match": {
-              "location": "e2e-tests\\step-definitions\\login.js:37"
+              "location": "e2e-tests\\step-definitions\\login.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 35000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "cucumber.conf.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "cucumber.conf.js:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "Addtochart",
-    "line": 3,
-    "id": "addtochart",
-    "tags": [
-      {
-        "name": "@Addtochart",
-        "line": 2
-      }
-    ],
-    "uri": "e2e-tests\\features\\002_addtochart.feature",
-    "elements": [
-      {
-        "id": "addtochart;user-can-add-5-dress-to-shopping-cart",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "user can add 5 dress to shopping cart",
-        "tags": [
-          {
-            "name": "@Addtochart",
-            "line": 2
-          },
-          {
-            "name": "@TC_02_001",
-            "line": 7
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "user on my account shop page",
-            "match": {
-              "location": "e2e-tests\\step-definitions\\addtochart.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8093000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "user open the detail dress",
-            "match": {
-              "location": "e2e-tests\\step-definitions\\addtochart.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6937000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "user add \"5\" dress to shopping cart",
-            "match": {
-              "location": "e2e-tests\\step-definitions\\addtochart.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6987000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "user open my shopping cart",
-            "match": {
-              "location": "e2e-tests\\step-definitions\\addtochart.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 80000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "user should see the dress in my shopping cart",
-            "match": {
-              "location": "e2e-tests\\step-definitions\\addtochart.js:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 40000000
+              "duration": 4381000000
             }
           },
           {
@@ -208,7 +87,128 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Addtocart",
+    "line": 3,
+    "id": "addtocart",
+    "tags": [
+      {
+        "name": "@Addtocart",
+        "line": 2
+      }
+    ],
+    "uri": "e2e-tests\\features\\002_addtocart.feature",
+    "elements": [
+      {
+        "id": "addtocart;user-can-add-5-dress-to-shopping-cart",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "user can add 5 dress to shopping cart",
+        "tags": [
+          {
+            "name": "@Addtocart",
+            "line": 2
+          },
+          {
+            "name": "@TC_02_001",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user on my account shop page",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\addtochart.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user open the detail dress",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\addtochart.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54691000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user add \"5\" dress to shopping cart",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\addtochart.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user open my shopping cart",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\addtochart.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11596000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should see the dress in my shopping cart",
+            "match": {
+              "location": "e2e-tests\\step-definitions\\addtochart.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1101000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
             }
           }
         ]

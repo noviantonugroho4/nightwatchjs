@@ -18,8 +18,7 @@ module.exports={
             locateStrategy: 'xpath'
         },
         shoptools_btn: {
-            selector: '//*[@id="noo-site"]/header/div[2]/div/div/div/div/a',
-            //selector: '//div[@class="noo-page-breadcrumb"]//child::span[contains(text(), "ToolsQA Demo Site")]',
+            selector: '//a/img[@class="custom-logo"]',
             locateStrategy: 'xpath'
         }   
     }

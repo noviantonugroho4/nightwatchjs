@@ -33,11 +33,8 @@ When(/^user sign with username "(.*?)" & password "(.*?)"$/, (email, password) =
     .pause(3000);
 })
 
-
 Then(/^user direct to my account page$/, () => {
     const myAccount_page = client.page.myAccount();
-    myAccount_page
-    //return client
-    .assert.urlContains(url)
-    //.assert.urlEquals();
+    return myAccount_page
+    .assert.urlContains(url);
 })
