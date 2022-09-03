@@ -32,5 +32,5 @@ When(/^user sign with username "(.*?)" & password "(.*?)"$/, (email, password) =
 Then(/^user direct to my account page$/, () => {
     const myAccount_page = client.page.myAccount();
     myAccount_page
-    .assert.urlEquals();
+    .assert.urlEquals(url);
 })

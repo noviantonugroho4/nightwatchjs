@@ -18,7 +18,7 @@ module.exports={
             locateStrategy: 'xpath'
         },
         shop_site_btn: {
-            selector: '//*[@class="home")]',
+            selector: '//*[@class="home"]',
             locateStrategy: 'xpath'
         }
     }
