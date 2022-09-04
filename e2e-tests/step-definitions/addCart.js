@@ -19,24 +19,24 @@ When(/^user click Product Detail page$/, () => {
     .pause(3000)
 })
 
-When(/^user add the same "(.*?)" products$/, (Qty) => {
+When(/^user add the same "(.*?)" products$/, (qty) => {
     const addtocart = client.page.product();
 
     return addtocart
+    .click('@color_btn')
+    .click('@size_btn')
     .waitForElementPresent('@qty_btn')
-    .click('@color_btn', 'Black')
-    .click('@size_btn', '34')
     .clearValue('@qty_btn')
-    .setValue('@qty_btn', Qty)
+    .setValue('@qty_btn', qty)
     .click('@addCart_btn')
-    .pause(3000)
+    .click('@viewcart_btn')
 })
 
-Then(/^show notif success added the product$/, () => {
-    const addtocart= client.page.product();
+Then(/^show notif success added the products and view cart$/, () => {
+    const view = client.page.viewcart();
 
-    return addtocart
-    .useXpath()
-    .waitForElementPresent('//*[@id="noo-site"]/div[2]/div/div/div[1]/div')
-    .assert.containsText('//*[@id="noo-site"]/div[2]/div/div/div[1]/div')
+    return view
+    .waitForElementPresent('@continueShop_btn')
+    .click('@continueShop_btn')
+    .pause(3000)
 })

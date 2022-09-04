@@ -1,5 +1,6 @@
-const { client } = require('nightwatch-api')
+const { client } = require('nightwatch-api');
 const { Given, Then, When } = require('cucumber');
+const { url } = require('../pages/myAccount');
 
 Given(/^user visit shop demoqa page$/, () => {
     return client

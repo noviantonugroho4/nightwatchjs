@@ -7,4 +7,4 @@ Scenario: add product to cart
 Given user visit My Account page
 When user click Product Detail page
 And user add the same "4" products
-Then show notif success added the product
+Then show notif success added the products and view cart

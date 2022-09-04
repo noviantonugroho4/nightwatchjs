@@ -2,7 +2,7 @@ module.exports={
     url: 'https://shop.demoqa.com/',
     elements: {
         product_btn: {
-            selector: '//a[contains(text(), "black lux graphic t-shirt")]',
+            selector: '(//div[@class="noo-product-thumbnail"]//following-sibling::h3)[3]',
             locateStrategy: 'xpath'
         }
     }
